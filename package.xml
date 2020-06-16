@@ -1,8 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Package xmlns="http://soap.sforce.com/2006/04/metadata">
     <types>
-        <members>Account.NewAccountExternalId__c</members>
+        <members>Account.Date_Of_Join__c</members>
+        <members>Account.Has_Support_Plan__c</members>
+        <members>Account.Region__c</members>
+        <members>Account.Zone__c</members>
+        <members>Case.Backup_Agent__c</members>
+        <members>Lead.Region__c</members>
+        <members>Opportunity.Close_Reason__c</members>
+        <members>Opportunity.Commission__c</members>
+        <members>Opportunity.Discount_Percentage__c</members>
+        <members>Opportunity.Region_Zone__c</members>
         <name>CustomField</name>
+    </types>
+    <types>
+        <members>Region</members>
+        <name>GlobalValueSet</name>
+    </types>
+    <types>
+        <members>Account-Customer Account Layout</members>
+        <name>Layout</name>
+    </types>
+    <types>
+        <members>Sales User</members>
+        <members>Support User</members>
+        <name>Profile</name>
+    </types>
+    <types>
+        <members>Account.Customer_Account</members>
+        <name>RecordType</name>
     </types>
     <version>48.0</version>
 </Package>
