@@ -8,4 +8,335 @@
         <trackFeedHistory>false</trackFeedHistory>
         <type>Date</type>
     </fields>
+    <fields>
+        <fullName>Has_Support_Plan__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Sales users use this field to indicate to Support which customers have support plans.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Does this customer have a current support plan? Check this box when you sell a support plan to this customer.</inlineHelpText>
+        <label>Has Support Plan</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Region__c</fullName>
+        <externalId>false</externalId>
+        <label>Region</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Region</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Zone__c</fullName>
+        <description>Customer’s zone within the selected region—for sales operations use only.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Customer’s zone within the selected region—for sales operations use only.</inlineHelpText>
+        <label>Zone</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <controllingField>Region__c</controllingField>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>East Asia</fullName>
+                    <default>false</default>
+                    <label>East Asia</label>
+                </value>
+                <value>
+                    <fullName>Oceania</fullName>
+                    <default>false</default>
+                    <label>Oceania</label>
+                </value>
+                <value>
+                    <fullName>Southeast Asia</fullName>
+                    <default>false</default>
+                    <label>Southeast Asia</label>
+                </value>
+                <value>
+                    <fullName>Africa</fullName>
+                    <default>false</default>
+                    <label>Africa</label>
+                </value>
+                <value>
+                    <fullName>Europe</fullName>
+                    <default>false</default>
+                    <label>Europe</label>
+                </value>
+                <value>
+                    <fullName>Middle East</fullName>
+                    <default>false</default>
+                    <label>Middle East</label>
+                </value>
+                <value>
+                    <fullName>UK + Ireland</fullName>
+                    <default>false</default>
+                    <label>UK + Ireland</label>
+                </value>
+                <value>
+                    <fullName>Caribbean</fullName>
+                    <default>false</default>
+                    <label>Caribbean</label>
+                </value>
+                <value>
+                    <fullName>Central America</fullName>
+                    <default>false</default>
+                    <label>Central America</label>
+                </value>
+                <value>
+                    <fullName>South America</fullName>
+                    <default>false</default>
+                    <label>South America</label>
+                </value>
+                <value>
+                    <fullName>Midwest US</fullName>
+                    <default>false</default>
+                    <label>Midwest US</label>
+                </value>
+                <value>
+                    <fullName>Northeast US</fullName>
+                    <default>false</default>
+                    <label>Northeast US</label>
+                </value>
+                <value>
+                    <fullName>Southeast US</fullName>
+                    <default>false</default>
+                    <label>Southeast US</label>
+                </value>
+                <value>
+                    <fullName>Southwest US</fullName>
+                    <default>false</default>
+                    <label>Southwest US</label>
+                </value>
+                <value>
+                    <fullName>West US</fullName>
+                    <default>false</default>
+                    <label>West US</label>
+                </value>
+                <value>
+                    <fullName>Northern Canada</fullName>
+                    <default>false</default>
+                    <label>Northern Canada</label>
+                </value>
+                <value>
+                    <fullName>Mountains and the West</fullName>
+                    <default>false</default>
+                    <label>Mountains and the West</label>
+                </value>
+                <value>
+                    <fullName>The Prairies</fullName>
+                    <default>false</default>
+                    <label>The Prairies</label>
+                </value>
+                <value>
+                    <fullName>Central Canada</fullName>
+                    <default>false</default>
+                    <label>Central Canada</label>
+                </value>
+                <value>
+                    <fullName>East Coast</fullName>
+                    <default>false</default>
+                    <label>East Coast</label>
+                </value>
+            </valueSetDefinition>
+            <valueSettings>
+                <controllingFieldValue>APAC</controllingFieldValue>
+                <valueName>East Asia</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>APAC</controllingFieldValue>
+                <valueName>Oceania</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>APAC</controllingFieldValue>
+                <valueName>Southeast Asia</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>EMEA</controllingFieldValue>
+                <valueName>Africa</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>EMEA</controllingFieldValue>
+                <valueName>Europe</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>EMEA</controllingFieldValue>
+                <valueName>Middle East</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>EMEA</controllingFieldValue>
+                <valueName>UK + Ireland</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>LATAM</controllingFieldValue>
+                <valueName>Caribbean</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>LATAM</controllingFieldValue>
+                <valueName>Central America</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>LATAM</controllingFieldValue>
+                <valueName>South America</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>US</controllingFieldValue>
+                <valueName>Midwest US</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>US</controllingFieldValue>
+                <valueName>Northeast US</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>US</controllingFieldValue>
+                <valueName>Southeast US</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>US</controllingFieldValue>
+                <valueName>Southwest US</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>US</controllingFieldValue>
+                <valueName>West US</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Canada</controllingFieldValue>
+                <valueName>Northern Canada</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Canada</controllingFieldValue>
+                <valueName>Mountains and the West</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Canada</controllingFieldValue>
+                <valueName>The Prairies</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Canada</controllingFieldValue>
+                <valueName>Central Canada</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Canada</controllingFieldValue>
+                <valueName>East Coast</valueName>
+            </valueSettings>
+        </valueSet>
+    </fields>
+    <recordTypes>
+        <fullName>Customer_Account</fullName>
+        <active>true</active>
+        <description>For customers and prospects</description>
+        <label>Customer Account</label>
+        <picklistValues>
+            <picklist>Region__c</picklist>
+            <values>
+                <fullName>APAC</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Canada</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>EMEA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>LATAM</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>US</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Zone__c</picklist>
+            <values>
+                <fullName>Africa</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Caribbean</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Central America</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Central Canada</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>East Asia</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>East Coast</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Europe</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Middle East</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Midwest US</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mountains and the West</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Northeast US</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Northern Canada</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Oceania</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>South America</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Southeast Asia</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Southeast US</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Southwest US</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>The Prairies</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>UK %2B Ireland</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>West US</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
 </CustomObject>
