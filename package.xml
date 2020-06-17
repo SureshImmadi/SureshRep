@@ -5,9 +5,17 @@
         <name>ApprovalProcess</name>
     </types>
     <types>
+        <members>Account.Date_Of_Join__c</members>
+        <members>Account.Has_Support_Plan__c</members>
         <members>Account.Job_Posting_Site_URL__c</members>
+        <members>Account.NewAccountExternalId__c</members>
+        <members>Account.Region__c</members>
         <members>Account.Support_Plan_Expiration_Date__c</members>
         <name>CustomField</name>
+    </types>
+    <types>
+        <members>BiCycle__c</members>
+        <name>CustomObject</name>
     </types>
     <types>
         <members>New_Cases</members>
@@ -18,6 +26,10 @@
         <members>New_Cases</members>
         <members>New_Oppty</members>
         <name>FlowDefinition</name>
+    </types>
+    <types>
+        <members>Region</members>
+        <name>GlobalValueSet</name>
     </types>
     <types>
         <members>TIMBASURVEYS__Survey__c.All</members>
