@@ -145,4 +145,12 @@
         <type>Text</type>
         <unique>false</unique>
     </fields>
+    <validationRules>
+        <fullName>Close_reason_required_when_lost</fullName>
+        <active>true</active>
+        <description>A close reason is required when opportunity is closed lost.</description>
+        <errorConditionFormula>ISPICKVAL( StageName ,&quot;Closed Lost&quot;) &amp;&amp; ISBLANK( Close_Reason__c )</errorConditionFormula>
+        <errorDisplayField>Close_Reason__c</errorDisplayField>
+        <errorMessage>You must enter a close reason when opportunity is closed lost.</errorMessage>
+    </validationRules>
 </CustomObject>
